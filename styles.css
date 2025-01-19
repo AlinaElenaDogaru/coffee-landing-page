@@ -1,0 +1,202 @@
+body {
+    background-color: #2C2C2C;
+    margin: 0;
+    min-height: 100vh;
+    /* Adaugă această linie */
+}
+
+.section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+
+.section {
+    position: relative;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('gold-bars.jpg') left center no-repeat, url('gold-refinery.jpg') right center no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.content {
+    position: absolute;
+    text-align: center;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    border-radius: 10px;
+    width: 60%;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+    border-image: linear-gradient(to right, transparent, #D5AF51, transparent) 1;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #FAFAFA;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1em;
+    margin-bottom: 20px;
+    color: #DDDDDD;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
+button {
+    background-color: #f0c14b;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e2b33a;
+}
+
+@media (max-width: 768px) {
+
+    .main {
+        flex-direction: column;
+        align-items: center;
+    }}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    background-color: #1e1e1e;
+}
+
+.sorts {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 20px 0;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+    overflow: hidden;
+    border: 1px solid transparent;
+        border-bottom: 1px solid transparent;
+        border-image: linear-gradient(to right, transparent, #D5AF51, transparent) 1;
+}
+
+.sorts img {
+    width: 50%;
+    height: auto;
+    border-right: 1px solid #444;
+}
+
+.sorts div {
+    padding: 20px;
+    width: 50%;
+}
+
+.sorts h1 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.sorts p {
+    font-size: 16px;
+    color: #ccc;
+    line-height: 1.5;
+}
+
+/* Modal container */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Modal content */
+.modal-content {
+    background-color: #333;
+    margin: 15% auto;
+    padding: 20px;
+    border: 2px solid gold;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+/* Close button */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #fff;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Button */
+button {
+    background-color: gold;
+    color: #333;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #ffd700;
+}
+
+.footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    border-top: 2px solid gold;
+}
+
+.footer a {
+    color: gold;
+    text-decoration: none;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
