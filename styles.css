@@ -9,7 +9,8 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: 60vh;
+    padding-top: 20px;
 }
 
 .main {
@@ -54,7 +55,12 @@ h1 {
     font-family: 'Playfair Display', serif;
     font-weight: 700;
 }
-
+.gold-title {
+    color: #D5AF51;
+    ;
+    text-shadow: 0 0 5px #D5AF51, 0 0 10px #D5AF51;   
+    font-size: 52px;
+}
 p {
     font-size: 1em;
     margin-bottom: 20px;
@@ -78,10 +84,13 @@ button:hover {
 
 @media (max-width: 768px) {
 
-    .main {
+.main {
         flex-direction: column;
         align-items: center;
-    }}
+    }
+
+
+}
 
 .second-section {
     display: flex;
