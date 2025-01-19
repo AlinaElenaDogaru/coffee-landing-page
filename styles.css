@@ -60,6 +60,7 @@ h1 {
     ;
     text-shadow: 0 0 5px #D5AF51, 0 0 10px #D5AF51;   
     font-size: 52px;
+    text-align: center;
 }
 p {
     font-size: 1em;
